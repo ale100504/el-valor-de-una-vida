@@ -925,4 +925,137 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     }
 
+
+    
+    // ==========================================
+    // JUZGAR — SECUENCIA 3
+    // CONEXIÓN ENTRE ECONOMÍA Y MORAL
+    // ==========================================
+
+    const moralBalance = document.getElementById("moralBalance");
+
+    if (moralBalance) {
+        const moralBalanceObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        moralBalanceObserver.observe(moralBalance);
+    }
+
+
+    
+    // ==========================================
+    // JUZGAR — SECUENCIA 4
+    // EMPRESA COMO COMUNIDAD DE PERSONAS
+    // ==========================================
+
+    const enterpriseCommunity =
+        document.getElementById("enterpriseCommunity");
+
+    if (enterpriseCommunity) {
+        const enterpriseObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        enterpriseObserver.observe(enterpriseCommunity);
+    }
+
+
+    
+    // ==========================================
+    // JUZGAR — SECUENCIA 5
+    // MERCADO, ESTADO Y SOCIEDAD
+    // ==========================================
+
+    const commonNetwork = document.getElementById("commonNetwork");
+
+    if (commonNetwork) {
+        const commonNetworkObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        commonNetworkObserver.observe(commonNetwork);
+    }
+
+    
+    // ==========================================
+    // JUZGAR — SECUENCIA 6
+    // GLOBALIZACIÓN Y DESARROLLO HUMANO
+    // ==========================================
+
+    const jglobalChain = document.getElementById("jglobalChain");
+
+    const jglobalDevelopment = document.querySelector(
+        ".jglobal-development-grid"
+    );
+
+    const jglobalAnimationObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animated");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    if (jglobalChain) {
+        jglobalAnimationObserver.observe(jglobalChain);
+    }
+
+    if (jglobalDevelopment) {
+        jglobalAnimationObserver.observe(jglobalDevelopment);
+    }
+
+
+    
+    // ==========================================
+    // ACTUAR — CRONOGRAMA ANIMADO
+    // ==========================================
+
+    const actionTimeline = document.getElementById("actionTimeline");
+
+    if (actionTimeline) {
+        const actionTimelineObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        actionTimelineObserver.observe(actionTimeline);
+    }
+
+
 });
